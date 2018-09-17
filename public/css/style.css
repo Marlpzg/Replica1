@@ -1,0 +1,158 @@
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #4b379a;
+    margin: 0;
+}
+
+#menu-plantilla{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    background-color: #000;
+    border-bottom: 1px solid #77cc6d;
+    padding: 0.1rem 1.2rem;
+    top: 0;
+    justify-content: space-between;
+    height: 56px;
+    
+}
+
+#botonesp{
+    margin: auto 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.btn-menup{
+    text-decoration: none;
+    color: #fff;
+    padding: 0.4em 0.9em;
+    border-radius: 2px;
+    margin: auto 0.4em;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.btn-social{
+    text-decoration: none;
+    color: #fff;
+    padding: 0.4em 0.9em;
+    border-radius: 3px;
+    font-size: 0.6em;
+    font-weight: bold;
+}
+
+#select{
+    margin: auto 0;
+    width: 200px;
+}
+
+#plantillas{
+    font-weight: bold;
+    color: #ccc;
+    background-color: #111;
+    border-radius: 2px;
+    width: 100%;
+    padding: 0.6em;
+    border: 0;
+}
+
+#plantillas:hover{
+    cursor: pointer;
+    color: #fff;
+}
+
+#plantillas>option{
+    color: #DFDFDF;
+    background-color: #2b2b2b;
+    border-bottom: 1px solid #414141;
+    padding: 1em;
+}
+
+#fb{
+    background-color: #365899;
+}
+
+#twitter{
+    background-color: #1b95e0;
+}
+
+#fb:hover{
+    background-color: #28416e;
+}
+
+#twitter:hover{
+    background-color: #166da3;
+}
+
+#download{
+    background-color: #5c4185;
+}
+
+#download:hover{
+    background-color: #463264;
+}
+
+#close{
+    background-color: #3b3b3b;
+}
+
+#close:hover{
+    background-color: #202020;
+}
+
+.btn-menup i{
+    padding-right: 10px; 
+}
+
+.btn-social i{
+    padding-right: 7px; 
+}
+
+.main-content{
+    background-color: #fff;
+    margin: 6rem auto;
+    width: 80vw;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.banner{
+    grid-column: 1/3;
+    background-image: url("../img/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+
+.banner::before{
+    background-image: linear-gradient(to right, #3224b0 0%, #be5ede 100%);
+    opacity: 0.9;
+    content: "";
+    width: 80vw;
+    height: 60vh;
+    position: absolute;
+}
+
+iframe{
+    width:100vw;
+    overflow-y: scroll;
+    z-index: -1;
+    height: 92.9vh;;
+}
