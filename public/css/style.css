@@ -119,11 +119,11 @@ body{
 .main-content{
     background-color: #fff;
     margin: 6rem auto;
-    width: 80vw;
+    width: 80%;
     font-family: 'Poppins', sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 60vh) repeat(2,55vh) repeat(3, 60vh);
+    grid-template-rows: repeat(3, 35rem) repeat(2,32rem) repeat(3, 35rem);
 }
 
 #menu{
@@ -137,7 +137,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 60vh;
+    height: 35rem;
 }
 
 .banner1{
@@ -152,13 +152,13 @@ body{
     background-image: linear-gradient(to right, #3224b0 0%, #be5ede 100%);
     opacity: 0.9;
     content: "";
-    width: 80vw;
-    height: 60vh;
+    width: 80%;
+    height: 35rem;
     position: absolute;
 }
 
 iframe{
-    width:100vw;
+    width:100%;
     overflow-y: scroll;
     height: calc(100vh - calc(56px + 0.5rem));
 }
@@ -306,7 +306,7 @@ iframe{
     grid-template-columns: 1fr 1fr;
 
     background-image: url("../img/parallux-bg.jpg");
-    height: 60vh;
+    height: 35rem;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
