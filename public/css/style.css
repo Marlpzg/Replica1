@@ -19,7 +19,7 @@ body{
     top: 0;
     justify-content: space-between;
     height: 56px;
-    
+
 }
 
 #botonesp{
@@ -62,6 +62,7 @@ body{
     width: 100%;
     padding: 0.6em;
     border: 0;
+    height: 1em;
 }
 
 #plantillas:hover{
@@ -109,11 +110,11 @@ body{
 }
 
 .btn-menup i{
-    padding-right: 10px; 
+    padding-right: 10px;
 }
 
 .btn-social i{
-    padding-right: 7px; 
+    padding-right: 7px;
 }
 
 /*-------------------------------------------------------------------------------------------------------------------*/
@@ -173,12 +174,12 @@ iframe{
 
 .menu{
     z-index: 2;
-    grid-column-start: 2; 
+    grid-column-start: 2;
     justify-self: center;
-} 
+}
 
 .menu ul {
-    
+
     width: 40%;
     display: flex;
     flex-direction: row;
@@ -236,7 +237,7 @@ iframe{
     border-radius: 2em;
     border: 1px solid #fff;
     padding: 0.5em 2em;
-    transition: all 0.3s ease-out; 
+    transition: all 0.3s ease-out;
 }
 
 .custom-btn:hover{
@@ -244,7 +245,7 @@ iframe{
     background: linear-gradient(to left, #3224b0 0%, #be5ede 100%);
     background-size: calc(100% + 2px);
     background-position: -1px;
-    transition: all 0.3s ease-out; 
+    transition: all 0.3s ease-out;
     border: 1px solid transparent;
 }
 
@@ -367,7 +368,7 @@ iframe{
     grid-column: 1/3;
     display: grid;
     height: 35rem;
-    
+
 }
 
 .contact-form{
@@ -472,7 +473,7 @@ p{
     font-family: 'Poppins', sans-serif;
     padding: 1em 16em 1em 2em;
     width: calc(40rem - 18em);
-    margin: 1rem; 
+    margin: 1rem;
 }
 
 .subscribe button{
@@ -482,6 +483,7 @@ p{
     text-transform: uppercase;
     font-weight: 100;
     margin-left: -15.5em;
+    cursor: pointer;
 }
 
 .subscribe p{
@@ -545,7 +547,7 @@ p{
     font-size: 0.85em;
     color: #bc5ede;
     transition: all 0.2s ease-out;
-    
+
 }
 
 .copyright{
