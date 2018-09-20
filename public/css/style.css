@@ -123,10 +123,10 @@ body{
     font-family: 'Poppins', sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 35rem) 30rem repeat(2,32rem) repeat(3, 35rem);
+    grid-template-rows: repeat(2, 35rem) 30rem repeat(2,32rem) 35rem 26rem 20rem;
 }
 
-#menu{
+.menu{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -200,6 +200,7 @@ iframe{
 
 .logo{
     margin-left: 26%;
+    margin-top: 1em;
 }
 
 .header-info{
@@ -237,6 +238,8 @@ iframe{
 .custom-btn:hover{
     color: #fff;
     background: linear-gradient(to left, #3224b0 0%, #be5ede 100%);
+    background-size: calc(100% + 2px);
+    background-position: -1px;
     transition: all 0.3s ease-out; 
     border: 1px solid transparent;
 }
@@ -327,6 +330,7 @@ iframe{
 
 .parallax-section > div{
     z-index: 2;
+    grid-column-start: 2;
 }
 
 .gallery{
@@ -378,18 +382,18 @@ iframe{
     grid-column: 1/3;
 }
 
-.info-contact h3{
+h3{
     font-size: 2.25em;
     font-weight: 100;
     margin: 0;
     line-height: 1.3em;
 }
 
-.info-contact h3 > span{
+span{
     font-weight: bold;
 }
 
-.info-contact p{
+p{
     margin: 0 0 1em;
     font-size: 0.88em;
 }
@@ -434,4 +438,81 @@ iframe{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     margin-top: -0.4em;
+    cursor: pointer;
+}
+
+.subscribe{
+    align-self: center;
+    justify-self: center;
+    grid-column: 1/3;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #000;
+    text-align: center;
+    background-color: #f9f9ff;
+    width: 100%;
+    height: 26rem;
+}
+
+.subscribe h3{
+    margin: 1rem;
+}
+
+.subscribe input[type="email"]{
+    border-radius: 2em;
+    border: 1px solid transparent;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 1em 16em 1em 2em;
+    width: calc(40rem - 18em);
+    margin: 1rem; 
+}
+
+.subscribe button{
+    font-size: 0.9rem;
+    width: 12em;
+    padding: 0.8em;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-left: -14.5em;
+}
+
+.subscribe p{
+    color: #777777;
+    margin-top: 2rem;
+}
+
+.end{
+    grid-column: 1/3;
+    background-color: #222222;
+    color: #fff;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.fmenu ul li a:hover{
+    color: #bc5ede;
+    transition: 0.3s;
+}
+
+.fmenu ul li a{
+    text-transform: capitalize;
+}
+
+.fmenu ul li{
+    margin: 1.5em;
+}
+
+.fmenu ul{
+    padding: 1em;
+    margin: 1em auto;
+    justify-content: center;
 }
