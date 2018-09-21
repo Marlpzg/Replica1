@@ -228,6 +228,7 @@ iframe{
 .logo{
     margin-left: 26%;
     margin-top: 1.2em;
+    justify-self: left;
 }
 
 .logo img{
