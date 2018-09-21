@@ -134,10 +134,17 @@ body{
     grid-template-rows: repeat(2, 35rem) 30rem repeat(2,32rem) 35rem 26rem 20rem;
 }
 
-.menu{
+.menu1, .menu2{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    z-index: 2;
+    grid-column-start: 2;
+    justify-self: center;
+}
+
+.exit-menu, .open-menu{
+    cursor: pointer;
 }
 
 .banner1, .contact{
@@ -175,25 +182,19 @@ iframe{
     z-index: 2;
 }
 
-.menu{
-    z-index: 2;
-    grid-column-start: 2;
-    justify-self: center;
-}
-
-.menu ul {
+.menu1 ul, .menu2 ul {
 
     width: 40%;
     display: flex;
     flex-direction: row;
 }
 
-.menu ul li{
+.menu1 ul li, .menu2 ul li{
     list-style: none;
     margin-right: 3.5em;
 }
 
-.menu ul li a{
+.menu1 ul li a, .menu2 ul li a{
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
@@ -201,18 +202,36 @@ iframe{
     transition: 0.3s;
 }
 
-.menu ul li a:hover{
+.menu1 ul li:nth-child(4){
+    margin-right: 0;
+}
+
+.exit-menu{
+    font-size: 1.2em;
+    cursor: pointer;
+    line-height: 1.2em;
+}
+
+.open-menu{
+    visibility: hidden;
+    margin-top: -50em;
+    margin-right: 2em;
+    font-size: 0.01em;
+}
+
+.menu1 ul li a:hover{
     color: #000;
     transition: 0.3s;
 }
 
 .logo{
     margin-left: 26%;
-    margin-top: 1em;
+    margin-top: 1.2em;
 }
 
 .logo img{
     width: 10.5rem;
+    cursor: pointer;
 }
 
 .header-info{
@@ -561,6 +580,7 @@ p{
 .copyright{
     text-align: center;
     margin: 0.8em auto;
+    padding: 0 1em;
 }
 
 .copyright span{
@@ -588,7 +608,7 @@ p{
         top:-20em;
     }
 
-    p, .content-section > p, .menu > ul > li >  a, .logo, .menu > ul > li >  i,
+    p, .content-section > p, .menu2 > ul > li >  a, .logo,
     .header-info > h2, .submit-btn, .custom-btn{
         font-size: calc(2em + 1vw/1.38);
     }
@@ -609,12 +629,28 @@ p{
         font-size: calc(1.4em + 1vw/1.38);
     }
 
-    .menu{
-        padding-top: 2em;
+    .menu1{
+        padding-top: 1rem;
+    }
+
+    .menu1 ul li a, .exit-menu{
+        visibility: hidden;
+        margin-top: -50em;
+        font-size: 1.2em;
+    }
+
+    .open-menu{
+        visibility: visible;
+        font-size: calc(4em + 1vw/1.38);
+        margin-top: 0;
+    }
+
+    .logo{
+        margin-left: 2em;
     }
 
     .logo > img{
-        width: 18rem;
+        width: 30rem;
     }
 
     .main-content{
